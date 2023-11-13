@@ -25,7 +25,7 @@ export default function Home() {
           href='/'
         >
           <img
-            src='/logo.png'
+            src='/Logo.png'
             className='w-10'
             alt='Alejo Pequeño'></img>
         </Link>
