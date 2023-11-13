@@ -1,11 +1,20 @@
 "use client";
 import Link from "next/link";
 import FramerMagnetic from "./magnetic/FramerMagnetic";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <main className='flex items-center justify-center flex-col h-[15vh] bg-[#1b1d22] border-t-2 border-[#292c33]'>
-      <div className='flex gap-3'>
+    <footer className='flex items-center justify-center flex-col h-[15vh] bg-[#1b1d22] border-t-2 border-[#292c33]'>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.1,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className='flex gap-3'>
         <FramerMagnetic>
           <Link
             href='https://github.com/alepeque9'
@@ -48,11 +57,19 @@ export default function Footer() {
             </svg>
           </Link>
         </FramerMagnetic>
-      </div>
+      </motion.div>
 
-      <p className='text-[#ec4e39]/70 font-[500] mt-5'>
+      <motion.p
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className='text-[#ec4e39]/70 font-[500] mt-5'>
         Alejo Pequeño 2023 &copy;
-      </p>
-    </main>
+      </motion.p>
+    </footer>
   );
 }
