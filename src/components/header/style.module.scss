@@ -1,0 +1,71 @@
+.button {
+  right: 0px;
+  margin: 5px;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    display: none;
+  }
+}
+
+.linkMenu{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  border-radius: 20px;
+}
+
+.linkMenu:hover{
+  color: #1b1d22;
+  background-color: #ec4e39;
+}
+
+.menuDesktop{
+  display: none;
+}
+
+
+.burger {
+  width: 100%;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40%;
+    margin: auto;
+    background-color: #ec4e39;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  &::after {
+    top: -5px;
+  }
+
+  &::before {
+    top: 5px;
+  }
+}
+
+.burgerActive {
+  &::after {
+    transform: rotate(45deg);
+    top: -1px;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+}
