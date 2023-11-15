@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 
+import Head from 'next/head';
+
 import Header from "../components/header";
 import StickyCursor from "../components/stickyCursor";
 import Footer from "@/components/footer";
@@ -18,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='es'>
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={`${inter.className} min-h-screen`}>
         <Header />
         <StickyCursor />
