@@ -3,3 +3,19 @@
     background-color: #1b1d22;
     overflow: hidden;
 }
+
+.tecnologias ~ p{
+    color: #292c33;
+    transition: 0.2s all
+}
+
+
+.tecnologias:hover ~ p{
+    color: #ec4e39;
+}
+
+@media (min-width: 1024px){
+    .tecnologias ~ p{
+        color: transparent;
+    }
+}

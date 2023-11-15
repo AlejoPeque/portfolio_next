@@ -8,16 +8,8 @@ export const navItems = [
     href: "/about",
   },
   {
-    title: "Tecnologías",
-    href: "/technologies",
-  },
-  {
     title: "Proyectos",
     href: "/proyects",
-  },
-  {
-    title: "Experiencia",
-    href: "/experience",
   },
   {
     title: "Contactame",

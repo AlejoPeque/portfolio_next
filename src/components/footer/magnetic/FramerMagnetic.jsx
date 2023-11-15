@@ -20,7 +20,7 @@ export default function FramerMagnetic({children}) {
     const { x, y } = position;
     return (
         <motion.div
-            style={{position: "relative"}}
+            style={{maxWidth: "1.75rem", maxHeight: "3.75rem", position: "relative", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}
             ref={ref}
             onMouseMove={handleMouse}
             onMouseLeave={reset}
