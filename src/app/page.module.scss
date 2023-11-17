@@ -9,11 +9,6 @@
     transition: 0.2s all
 }
 
-
-.tecnologias:hover ~ p{
-    color: #ec4e39;
-}
-
 @media (min-width: 1024px){
     .tecnologias ~ p{
         color: transparent;

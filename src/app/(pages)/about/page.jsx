@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "../../page.module.scss";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import FramerMagnetic from "@/components/footer/magnetic/FramerMagnetic";
 
 import {
@@ -11,9 +11,10 @@ import {
 import "./style.min.css";
 
 import { experiencesData } from "@/data/data";
-import { AlignBottom } from "@phosphor-icons/react/dist/ssr";
 
 export default function About() {
+  let { scrollYProgress } = useScroll()
+
   return (
     <main
       className={`${styles.main} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem]`}>
@@ -79,7 +80,7 @@ export default function About() {
             }}
             className='text-[#565d6a] mb-4'>
             Me apasiona programar y diseñar sitios web. Tengo experiencia en
-            crear soluciones web innovadoras. Soy bueno trabajando en equipo,
+            crear <span className='text-[#ec4e39] font-semibold'>soluciones web innovadoras.</span> Soy bueno trabajando en equipo,
             siempre estoy aprendiendo y listo para enfrentar nuevos desafíos en
             mi área. Mi objetivo es contribuir al éxito de mi equipo y la
             organización en la que trabajo.
@@ -373,52 +374,6 @@ export default function About() {
         className='text-[#ec4e39] font-[700] text-[25px] mb-4'>
         Experiencia
       </motion.h3>
-      {/* <div>
-        {
-          experiencesData.map((data) => (
-            <div className="mb-4">
-              <div className="flex justify-between mb-1">
-                <motion.p initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 1.1,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }} className="text-[#ec4e39] font-[600]">
-                  {data.title}
-                </motion.p>
-                <motion.p initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 1.1,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }} className="text-[#565d6a] font-[600]">
-                  {data.date}
-                </motion.p>
-              </div>
-              <motion.p initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 1.1,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }} className="text-[#565d6a] font-[600] mb-1">
-                {data.location}
-              </motion.p>
-              <motion.p initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 1.1,
-                  ease: [0, 0.71, 0.2, 1.01],
-                }} className="text-[#565d6a]">
-                {data.description}
-              </motion.p>
-            </div>
-          ))
-        }
-      </div> */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

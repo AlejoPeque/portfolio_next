@@ -12,7 +12,7 @@ export default function Home() {
   const [isActive, setIsActive] = useState(false);
   const pathname = usePathname();
 
-  let [activeTab, setActiveTab] = useState(navItems[0].href);
+  let [activeTab, setActiveTab] = useState(pathname);
 
   useEffect(() => {
     if (isActive) setIsActive(false);
@@ -27,16 +27,13 @@ export default function Home() {
         delay: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className='bg-[#1b1d22e7] backdrop-blur h-20 fixed z-[9] w-full flex items-center justify-between border-b-2 border-[#292c33]'>
+      className='bg-[#1b1d22ce] backdrop-blur h-20 fixed z-[9] w-full flex items-center justify-between border-b-2 border-[#292c33]'>
       <h1 className='mx-4 flex items-center'>
-        <Link href='/'>
-          <img
-            src='/Logo.png'
-            className='w-10'
-            alt='Alejo Pequeño'></img>
-        </Link>
+        <img
+          src='/Logo.png'
+          className='w-10'
+          alt='Alejo Pequeño'></img>
       </h1>
-
       {/* Menu Mobile */}
       <div
         onClick={() => {

@@ -46,3 +46,22 @@ export const experiencesData = [
     icon: React.createElement(CreditCard),
   },
 ];
+
+export const proyectsData = [
+  {
+    title: "Antiria",
+    description:
+      "Participé en la creación de una página web con Node.js, Express y MySQL, incluyendo la creación de una API específicamente diseñada para el proyecto.",
+    tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "EJS"],
+    imageUrl: '/Antiria.png',
+    href: 'https://github.com/alepeque9/antiria_node'
+  },
+  {
+    title: "Antiria",
+    description:
+      "Participé en la creación de una página web con Node.js, Express y MySQL, incluyendo la creación de una API específicamente diseñada para el proyecto.",
+    tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "EJS"],
+    imageUrl: '/Antiria.png',
+    href: 'https://github.com/alepeque9/antiria_node'
+  },
+]

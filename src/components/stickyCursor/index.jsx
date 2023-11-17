@@ -18,7 +18,7 @@ export default function index() {
 
   const manageMouseMove = (e) => {
     const { clientX, clientY } = e;
-    mouse.x.set(clientX - cursorSize / 2);
+    mouse.x.set(clientX - cursorSize / 1.5);
     mouse.y.set(clientY - cursorSize / 2);
   };
 
