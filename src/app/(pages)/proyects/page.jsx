@@ -6,6 +6,7 @@ import { proyectsData } from "@/data/data";
 import Link from "next/link";
 
 export default function About() {
+  let currentDelay = 0;
   return (
     <main
       className={`${styles.main} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem]`}>
@@ -36,7 +37,14 @@ export default function About() {
       </div>
       <div>
         {proyectsData.map((data) => (
-          <Link
+          <motion.Link
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{
+            duration: 1,
+            delay: data.delay,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
           href={data.href}
           target="_blank"
           key={data.title}
@@ -65,7 +73,7 @@ export default function About() {
               ))}
             </ul>
           </div>
-        </Link>
+        </motion.Link>
         ))}
       </div>
     </main>
