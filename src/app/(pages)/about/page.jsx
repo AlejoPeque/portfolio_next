@@ -40,27 +40,41 @@ export default function About() {
           className='text-[#565d6a] font-[500] text-[16px] mb-4'>
           Conoceme rapidamente
         </motion.h3>
-        <div className='flex gap-4'>
-          <Atropos>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className='flex gap-4'>
+          <Atropos
+            shadow={false}
+            className="relative">
             <img
               src='/1.jpg'
-              className='w-[300px]'
+              className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
+            <p className="absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]">Recital - 2023</p>
           </Atropos>
-          <Atropos>
+          <Atropos
+            shadow={false}
+            className="relative">
             <img
               src='/2.jpg'
-              className='w-[300px]'
+              className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
+            <p className="absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]">Illustración - 2023</p>
           </Atropos>
-        </div>
+        </motion.div>
         <div className='mt-4'>
           <motion.h4
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: 0.3,
+              delay: 0.4,
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] font-semibold mb-4'>
@@ -72,7 +86,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: 0.4,
+              delay: 0.5,
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] mb-4'>
@@ -87,7 +101,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: 0.5,
+              delay: 0.6,
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] mb-4'>
@@ -105,7 +119,7 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: 0.6,
+              delay: 0.7,
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] mb-4'>
@@ -131,7 +145,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.8,
-            delay: 0.7,
+            delay: 0.8,
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#ec4e39] font-[700] text-[25px] mb-2'>
@@ -143,7 +157,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
-          delay: 0.8,
+          delay: 0.9,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         className='text-[#565d6a] mb-4'>
@@ -155,7 +169,7 @@ export default function About() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.8,
-            delay: 0.9,
+            delay: 1,
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='flex gap-x-[4rem] gap-y-[1rem] flex-wrap justify-center'>
@@ -383,7 +397,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
-          delay: 1,
+          delay: 1.1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         className='text-[#ec4e39] font-[700] text-[25px] mb-4'>
@@ -394,7 +408,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
-          delay: 1.1,
+          delay: 1.2,
           ease: [0, 0.71, 0.2, 1.01],
         }}>
         <VerticalTimeline className=''>

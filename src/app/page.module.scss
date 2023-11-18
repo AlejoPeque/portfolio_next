@@ -13,6 +13,17 @@
     color: #ec4e39;
 }
 
+.hoverImg{
+    transition: 0.2s;
+}
+
+.hoverImg:hover{
+    transform: scale(1.02);
+}
+
+.aboutImgMe:hover ~ p{
+    color: #ec4e39;
+}
 
 @media (min-width: 1024px){
     .tecnologias ~ p{
