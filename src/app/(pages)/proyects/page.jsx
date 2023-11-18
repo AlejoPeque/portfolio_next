@@ -6,7 +6,6 @@ import { proyectsData } from "@/data/data";
 import Link from "next/link";
 
 export default function About() {
-  let currentDelay = 0;
   return (
     <main
       className={`${styles.main} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem]`}>
@@ -35,48 +34,49 @@ export default function About() {
           pasión.
         </motion.h3>
       </div>
-      <div>
+      <div className='lg:flex justify-between flex-wrap'>
         {proyectsData.map((data) => (
           <Link
             href={data.href}
-            target='_blank'>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                duration: 1,
-                delay: data.delay,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-              key={data.title}
-              className='flex p-4 border-2 border-[#565d6a] transition-all rounded-xl mb-4 hover:border-[#ec4e39] hover:bg-[#181a1f]'>
-              <div className='hidden mr-4 lg:block'>
-                <img
-                  src={data.imageUrl}
-                  className='w-[200px] rounded-lg'
-                  alt={data.title}
-                />
-              </div>
-              <div className='w-full flex flex-col justify-between'>
-                <div>
-                  <p className='text-[#ec4e39] text-lg font-[600]'>
-                    {data.title}
-                  </p>
-                  <p className='text-[#565d6a] mb-2 text-base'>
-                    {data.description}
-                  </p>
+            target='_blank'
+            className={`${styles.hoverImg} 2xl:w-[49%] lg:w-auto`}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 1,
+                  delay: data.delay,
+                  ease: [0, 0.71, 0.2, 1.01],
+                }}
+                key={data.title}
+                className='flex p-4 border-2 border-[#565d6a] overflow-hidden transition-all rounded-2xl mb-4 hover:border-[#ec4e39] hover:bg-[#181a1f]'>
+                <div className='hidden mr-4 lg:block'>
+                  <img
+                    src={data.imageUrl}
+                    className='w-[200px] rounded-lg'
+                    alt={data.title}
+                  />
                 </div>
-                <ul className='flex gap-2 flex-wrap justify-end align-self-end'>
-                  {data.tags.map((tag) => (
-                    <li
-                      key={tag}
-                      className='bg-[#ec4e39] text-[#1b1d22] text-base rounded-full px-3 py-[2px] font-[500]'>
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
+                <div className='w-full flex flex-col justify-between'>
+                  <div>
+                    <p className='text-[#ec4e39] text-lg font-[600]'>
+                      {data.title}
+                    </p>
+                    <p className='text-[#565d6a] mb-2 text-base'>
+                      {data.description}
+                    </p>
+                  </div>
+                  <ul className='flex gap-2 flex-wrap justify-end align-self-end'>
+                    {data.tags.map((tag) => (
+                      <li
+                        key={tag}
+                        className='bg-[#ec4e39] text-[#1b1d22] text-base rounded-full px-3 py-[2px] font-[500]'>
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
           </Link>
         ))}
       </div>

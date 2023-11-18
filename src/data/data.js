@@ -66,4 +66,13 @@ export const proyectsData = [
     href: 'https://github.com/alepeque9/antiria_node',
     delay: 0.4
   },
+  {
+    title: "Antiria",
+    description:
+      "Participé en la creación de una página web con Node.js, Express y MySQL, incluyendo la creación de una API específicamente diseñada para el proyecto.",
+    tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "EJS"],
+    imageUrl: '/Antiria.jpg',
+    href: 'https://github.com/alepeque9/antiria_node',
+    delay: 0.5
+  },
 ]

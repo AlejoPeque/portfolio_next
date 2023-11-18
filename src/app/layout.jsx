@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 
 import "./globals.css";
+import 'atropos/css'
 
 import Head from 'next/head';
 

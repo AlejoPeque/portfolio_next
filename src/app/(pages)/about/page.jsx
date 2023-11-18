@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "../../page.module.scss";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import FramerMagnetic from "@/components/footer/magnetic/FramerMagnetic";
 
 import {
@@ -11,10 +11,9 @@ import {
 import "./style.min.css";
 
 import { experiencesData } from "@/data/data";
+import Atropos from "atropos/react";
 
 export default function About() {
-  let { scrollYProgress } = useScroll()
-
   return (
     <main
       className={`${styles.main} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem]`}>
@@ -38,11 +37,24 @@ export default function About() {
             delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01],
           }}
-          className='text-[#565d6a] font-[500] text-[16px]'>
+          className='text-[#565d6a] font-[500] text-[16px] mb-4'>
           Conoceme rapidamente
         </motion.h3>
-        <p className='text-blue-700'>ACA VAN FOTOS MIAS </p>
-        <div className='mt-10'>
+        <div className='flex gap-4'>
+          <Atropos>
+            <img
+              src='/1.jpg'
+              className='w-[300px]'
+            />
+          </Atropos>
+          <Atropos>
+            <img
+              src='/2.jpg'
+              className='w-[300px]'
+            />
+          </Atropos>
+        </div>
+        <div className='mt-4'>
           <motion.h4
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,10 +92,13 @@ export default function About() {
             }}
             className='text-[#565d6a] mb-4'>
             Me apasiona programar y diseñar sitios web. Tengo experiencia en
-            crear <span className='text-[#ec4e39] font-semibold'>soluciones web innovadoras.</span> Soy bueno trabajando en equipo,
-            siempre estoy aprendiendo y listo para enfrentar nuevos desafíos en
-            mi área. Mi objetivo es contribuir al éxito de mi equipo y la
-            organización en la que trabajo.
+            crear{" "}
+            <span className='text-[#ec4e39] font-semibold'>
+              soluciones web innovadoras.
+            </span>{" "}
+            Soy bueno trabajando en equipo, siempre estoy aprendiendo y listo
+            para enfrentar nuevos desafíos en mi área. Mi objetivo es contribuir
+            al éxito de mi equipo y la organización en la que trabajo.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -396,7 +411,7 @@ export default function About() {
               <h4 className='vertical-timeline-element-subtitle text-[#525865] font-[600]'>
                 {data.location}
               </h4>
-              <p className="text-[#525865] font-normal">{data.description}</p>
+              <p className='text-[#525865] font-normal'>{data.description}</p>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
