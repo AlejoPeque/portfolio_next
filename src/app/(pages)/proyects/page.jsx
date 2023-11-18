@@ -40,16 +40,25 @@ export default function About() {
             href={data.href}
             target='_blank'
             className={`${styles.hoverImg} 2xl:w-[49%] lg:w-auto`}>
-              <motion.div
-                initial={{ opacity: 0 }}
+            <motion.div
+              key={data.title}
+              initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
                   duration: 1,
                   delay: data.delay,
                   ease: [0, 0.71, 0.2, 1.01],
                 }}
-                key={data.title}
-                className='flex p-4 border-2 border-[#565d6a] overflow-hidden transition-all rounded-2xl mb-4 hover:border-[#ec4e39] hover:bg-[#181a1f]'>
+              className='p-4 border-2 border-[#565d6a] overflow-hidden transition-all rounded-2xl mb-4 hover:border-[#ec4e39] hover:bg-[#181a1f]'>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  delay: data.delay,
+                  ease: [0, 0.71, 0.2, 1.01],
+                }}
+                className="flex">
                 <div className='hidden mr-4 lg:block'>
                   <img
                     src={data.imageUrl}
@@ -77,6 +86,7 @@ export default function About() {
                   </ul>
                 </div>
               </motion.div>
+            </motion.div>
           </Link>
         ))}
       </div>
