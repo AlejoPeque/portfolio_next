@@ -27,7 +27,7 @@ export default function About() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#ec4e39] font-[700] text-[38px]'>
-          Conoceme
+          Conóceme
         </motion.h2>
         <motion.h3
           initial={{ opacity: 0, y: 50 }}
@@ -38,7 +38,7 @@ export default function About() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#565d6a] font-[500] text-[16px] mb-4'>
-          Conoceme rapidamente
+          Conóceme rápidamente
         </motion.h3>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -51,21 +51,25 @@ export default function About() {
           className='flex gap-4'>
           <Atropos
             shadow={false}
-            className="relative">
+            className='relative'>
             <img
               src='/3.jpg'
               className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
-            <p className="absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]">Recital - 2023</p>
+            <p className='absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]'>
+              Recital - 2023
+            </p>
           </Atropos>
           <Atropos
             shadow={false}
-            className="relative">
+            className='relative'>
             <img
               src='/2.jpg'
               className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
-            <p className="absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]">Illustración - 2023</p>
+            <p className='absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]'>
+              Ilustración - 2023
+            </p>
           </Atropos>
         </motion.div>
         <div className='mt-4'>
@@ -123,21 +127,29 @@ export default function About() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] mb-4'>
-            Soy estudiante universitario en la insitución{" "}
+            Soy estudiante universitario en la institución{" "}
             <span className='text-[#ec4e39] font-semibold'>
-              Escula Da Vinci
+              Escuela Da Vinci
             </span>
             , persiguiendo un título de Diseñador Multimedial, ya que une mis
-            dos pasiones, la progrmación y el diseño. Ademas estoy certificado
-            profecionalmente como Desarrollador Web FullStack en{" "}
+            dos pasiones, la programación y el diseño. Ademas estoy certificado
+            profesionalmente como Desarrollador Web FullStack en{" "}
             <span className='text-[#ec4e39] font-semibold'>Digital House</span>.
-            Deseo seguir espacializandome en este rubro del diseño y la
-            programación. Tengo una fuerte pasión por la tecnología, el software
-            y los lenguajes de programación, estoy constantemente buscando
-            ampliar mis conocimientos y habilidades en estas áreas. También me
-            interesan la escritura y las matemáticas, y creo que estas materias
-            complementan mis objetivos técnicos. Gracias por visitar mi
-            portafolio y espero compartir mi trabajo contigo.
+            Quiero seguir especializándome en el diseño y programación, mi pasión por la tecnología
+            y los lenguajes de programación impulsa mi constante búsqueda de conocimientos.
+            También me atraen la escritura y las matemáticas, considerando que complementan mis metas técnicas.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className='text-[#565d6a] mb-4'>
+            Gracias por visitar mi portafolio y espero compartir mi trabajo
+            contigo.
           </motion.p>
         </div>
         <motion.h3
@@ -145,7 +157,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.8,
-            delay: 0.8,
+            delay: 0.9,
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#ec4e39] font-[700] text-[25px] mb-2'>
@@ -157,7 +169,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
-          delay: 0.9,
+          delay: 1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         className='text-[#565d6a] mb-4'>
@@ -169,7 +181,7 @@ export default function About() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.8,
-            delay: 1,
+            delay: 1.1,
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='flex gap-x-[4rem] gap-y-[1rem] flex-wrap justify-center'>
@@ -397,7 +409,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
-          delay: 1.1,
+          delay: 1.2,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         className='text-[#ec4e39] font-[700] text-[25px] mb-4'>
@@ -408,7 +420,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.8,
-          delay: 1.2,
+          delay: 1.3,
           ease: [0, 0.71, 0.2, 1.01],
         }}>
         <VerticalTimeline className=''>

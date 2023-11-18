@@ -7,7 +7,7 @@ export const navItems = [
     href: "/",
   },
   {
-    title: "Conoceme",
+    title: "Conóceme",
     href: "/about",
   },
   {
@@ -15,7 +15,7 @@ export const navItems = [
     href: "/proyects",
   },
   {
-    title: "Contactame",
+    title: "Contácteme",
     href: "/contact",
   },
 ];

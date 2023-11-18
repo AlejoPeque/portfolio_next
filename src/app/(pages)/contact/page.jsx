@@ -16,7 +16,7 @@ export default function Contact() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#ec4e39] font-[700] text-[38px]'>
-          Contactame
+          Contácteme
         </motion.h2>
         <motion.h3
           initial={{ opacity: 0, y: 50 }}
@@ -27,7 +27,7 @@ export default function Contact() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#565d6a] font-[500] text-[16px]'>
-          Ponte en contacto conmigo.
+          Contame en que te puedo ayudar.
         </motion.h3>
       </div>
     </main>
