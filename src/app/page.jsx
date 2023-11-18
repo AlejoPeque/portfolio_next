@@ -30,7 +30,7 @@ export default function Home() {
           Desarrollador FullStack && Diseñador Multimedial
         </motion.h3>
         <motion.a
-          className='w-[200px] h-[60px] rounded-[50px] bg-[#ec4e39] flex items-center justify-center font-[600] my-4'
+          className='w-[200px] h-[60px] rounded-[50px] bg-[#ec4e39] flex items-center justify-center font-[600] my-4 text-lg text-[#1b1d22]'
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.1 }}
