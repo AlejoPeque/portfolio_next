@@ -36,8 +36,7 @@ export default function Home() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           transition={{
-            duration: 0.8,
-            delay: 0.3,
+            duration: 0.3,
             ease: [0, 0.71, 0.2, 1.01],
             type: "spring",
             stiffness: 400,
