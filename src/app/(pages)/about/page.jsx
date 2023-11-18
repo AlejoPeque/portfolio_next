@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "../../page.module.scss";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import FramerMagnetic from "@/components/footer/magnetic/FramerMagnetic";
 
 import {
@@ -13,6 +13,7 @@ import "./style.min.css";
 import { experiencesData } from "@/data/data";
 
 export default function About() {
+  let { scrollYProgress } = useScroll()
 
   return (
     <main
