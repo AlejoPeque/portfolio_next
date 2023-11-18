@@ -53,7 +53,7 @@ export default function About() {
             shadow={false}
             className="relative">
             <img
-              src='/1.jpg'
+              src='/3.jpg'
               className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
             <p className="absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]">Recital - 2023</p>
