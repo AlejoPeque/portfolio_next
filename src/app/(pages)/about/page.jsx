@@ -135,7 +135,7 @@ export default function About() {
             dos pasiones, la programación y el diseño. Ademas estoy certificado
             profesionalmente como Desarrollador Web FullStack en{" "}
             <span className='text-[#ec4e39] font-semibold'>Digital House</span>.
-            Quiero seguir especializándome en el diseño y programación, mi pasión por la tecnología
+            Quiero seguir especializándome en el diseño y en la programación, mi pasión por la tecnología
             y los lenguajes de programación impulsa mi constante búsqueda de conocimientos.
             También me atraen la escritura y las matemáticas, considerando que complementan mis metas técnicas.
           </motion.p>
