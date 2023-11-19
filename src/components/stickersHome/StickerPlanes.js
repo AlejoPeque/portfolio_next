@@ -82,18 +82,6 @@ export default function StickerPlanes({ MouseMovement }) {
             alt="cookie-sticker"
           />
         </ImageWrapper>
-        <ImageWrapper
-          className={"right-[15%] top-[30vh] w-[10vh] lg:w-[5vw] "}
-          custom={2.8}
-        >
-          <Image
-            className="inline-block align-middle"
-            src={"/codigo.png"}
-            height={300}
-            width={300}
-            alt="cookie-sticker"
-          />
-        </ImageWrapper>
       </div>
       <div
         ref={plane2}
@@ -135,6 +123,18 @@ export default function StickerPlanes({ MouseMovement }) {
             height={300}
             width={300}
             alt="Chef's-Hat-sticker"
+          />
+        </ImageWrapper>
+        <ImageWrapper
+          className={"right-[15%] top-[30vh] w-[10vh] lg:w-[5vw] "}
+          custom={2.8}
+        >
+          <Image
+            className="inline-block align-middle"
+            src={"/codigo.png"}
+            height={300}
+            width={300}
+            alt="cookie-sticker"
           />
         </ImageWrapper>
 
