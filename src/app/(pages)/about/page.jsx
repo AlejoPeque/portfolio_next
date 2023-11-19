@@ -53,7 +53,7 @@ export default function About() {
             shadow={false}
             className='relative'>
             <img
-              src='/3.jpg'
+              src='/1.jpg'
               className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
             <p className='absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]'>
@@ -135,9 +135,10 @@ export default function About() {
             dos pasiones, la programación y el diseño. Ademas estoy certificado
             profesionalmente como Desarrollador Web FullStack en{" "}
             <span className='text-[#ec4e39] font-semibold'>Digital House</span>.
-            Quiero seguir especializándome en el diseño y en la programación, mi pasión por la tecnología
-            y los lenguajes de programación impulsa mi constante búsqueda de conocimientos.
-            También me atraen la escritura y las matemáticas, considerando que complementan mis metas técnicas.
+            Quiero seguir especializándome en el diseño y en la programación, mi
+            pasión por la tecnología y los lenguajes de programación impulsa mi
+            constante búsqueda de conocimientos. También me atraen la escritura
+            y las matemáticas, considerando que complementan mis metas técnicas.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -442,6 +443,25 @@ export default function About() {
           ))}
         </VerticalTimeline>
       </motion.div>
+
+      {/* <ol class='relative ml-4 border-s border-gray-700'>
+        {experiencesData.map((data) => (
+          <li key={data.title} className='mb-10 ms-6'>
+            <span class='absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-2 ring-[#ec4e39] bg-[transparent] text-[#ec4e39] text-xl'>
+              {data.icon}
+            </span>
+            <h3 className='mb-1 text-lg text-[#ec4e39] font-[600]'>
+              {data.title}
+            </h3>
+            <time className='block mb-2 text-sm leading-none text-[#525865] font-[600]'>
+              {data.location} | {data.date}
+            </time>
+            <p className='text-base text-[#525865] font-normal'>
+              {data.description}
+            </p>
+          </li>
+        ))}
+      </ol> */}
     </main>
   );
 }

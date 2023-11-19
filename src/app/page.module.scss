@@ -30,3 +30,50 @@
         color: transparent;
     }
 }
+
+.homeImgMe{
+    background-image: url('/3.jpg');
+    background-size: cover;
+    border-radius: 49% 51% 70% 30% / 30% 34% 66% 70% ;
+    animation: homeImgMe 8s ease-in-out infinite;
+}
+
+@keyframes homeImgMe {
+    0%{
+        border-radius: 49% 51% 70% 30% / 30% 34% 66% 70%;
+    }
+    10%{
+        border-radius: 39% 61% 33% 67% / 55% 45% 55% 45%;
+    }
+    20%{
+        border-radius: 59% 41% 78% 22% / 43% 58% 42% 57%;
+    }
+    30%{
+        border-radius: 79% 21% 45% 55% / 75% 76% 24% 25%;
+    }
+    40%{
+        border-radius: 27% 73% 75% 25% / 28% 48% 52% 72%;
+    }
+    50%{
+        border-radius: 28% 72% 18% 82% / 38% 20% 80% 62%;
+    }
+    60%{
+        border-radius: 77% 23% 74% 26% / 71% 79% 21% 29%;
+    }
+    70%{
+        border-radius: 77% 23% 30% 70% / 71% 30% 70% 29%;
+    }
+    80%{
+        border-radius: 27% 73% 30% 70% / 41% 30% 70% 59%;
+    }
+    90%{
+        border-radius: 70% 30% 30% 70% / 69% 74% 26% 31%;
+    }
+    100%{
+        border-radius: 49% 51% 70% 30% / 30% 34% 66% 70%;
+    }
+}
+
+.botonHome:hover path{
+    fill: #ec4e39;
+}
