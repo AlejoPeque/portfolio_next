@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className='flex items-center justify-center flex-col h-[20vh] bg-[#1b1d22] border-t-2 border-[#292c33]'>
+    <footer className='flex items-center justify-center flex-col h-[20vh] bg-[#1b1d22] border-t-2 border-[#292c33] relative z-10'>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import styles from "../../page.module.scss";
 import { motion } from "framer-motion";
 import FramerMagnetic from "@/components/footer/magnetic/FramerMagnetic";
@@ -109,12 +108,12 @@ export default function About() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] mb-4'>
-            Me apasiona programar y diseñar sitios web. Tengo experiencia en
+            Apasionado por programar y diseñar sitios web, con experiencia en
             crear{" "}
             <span className='text-[#ec4e39] font-semibold'>
               soluciones web innovadoras.
             </span>{" "}
-            Soy bueno trabajando en equipo, siempre estoy aprendiendo y listo
+            Destaco en el trabajo en equipo, siempre estoy aprendiendo y listo
             para enfrentar nuevos desafíos en mi área. Mi objetivo es contribuir
             al éxito de mi equipo y la organización en la que trabajo.
           </motion.p>

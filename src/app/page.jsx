@@ -2,11 +2,30 @@
 import styles from "./page.module.scss";
 import { motion } from "framer-motion";
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
+import Lenis from "@studio-freight/lenis";
+import StickerPlanes from "@/components/stickersHome/StickerPlanes";
 
 export default function Home() {
+  const [MouseMovement, setMouseMovement] = useState(0);
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <main
-      className={`${styles.main} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem] flex justify-center gap-2 lg:gap-8 items-center flex-wrap`}>
+      onMouseMove={(e) => {
+        setMouseMovement(e)
+      }}
+      className={`${styles.main} ${styles.mainHome} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem] flex justify-center gap-2 lg:gap-8 items-center flex-wrap`}>
+      <StickerPlanes MouseMovement={MouseMovement} />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -71,7 +90,7 @@ export default function Home() {
               damping: 17,
             }}
             href='https://github.com/alepeque9'
-            target="_blank">
+            target='_blank'>
             <GithubLogo size={30} />
           </motion.a>
           <motion.a
@@ -88,7 +107,7 @@ export default function Home() {
               damping: 17,
             }}
             href='https://www.linkedin.com/in/alejo-peque%C3%B1o/'
-            target="_blank">
+            target='_blank'>
             <LinkedinLogo size={30} />
           </motion.a>
         </div>
