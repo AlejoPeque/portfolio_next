@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.scss";
 import { motion } from "framer-motion";
-import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import { ArrowLineDown, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import StickerPlanes from "@/components/stickersHome/StickerPlanes";
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main
       onMouseMove={(e) => {
-        setMouseMovement(e)
+        setMouseMovement(e);
       }}
       className={`${styles.main} ${styles.mainHome} pt-[6rem] pb-8 px-[1.5rem] sm:px-[6rem] md:px-[12rem] flex justify-center gap-2 lg:gap-8 items-center flex-wrap`}>
       <StickerPlanes MouseMovement={MouseMovement} />
@@ -34,8 +34,8 @@ export default function Home() {
           delay: 0.1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className={`${styles.homeImgMe} bg-[#1b1d22] w-[300px] h-[300px] border-4 border-[#ec4e39]`}></motion.div>
-      <div>
+        className={`${styles.homeImgMe} bg-[#1b1d22] w-[300px] h-[300px] border-4 border-[#ec4e39] relative z-10`}></motion.div>
+      <div className="relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function Home() {
         </motion.h3>
         <div className='flex gap-3 justify-center lg:justify-start'>
           <motion.a
-            className='w-[150px] h-[55px] rounded-[60px] bg-[#ec4e39] flex items-center justify-center font-[600] my-4 text-base text-[#1b1d22]'
+            className='w-[160px] h-[55px] rounded-[60px] bg-[#ec4e39] flex items-center justify-center font-[600] my-4 text-base text-[#1b1d22]'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.1 }}
@@ -75,6 +75,11 @@ export default function Home() {
             href='/CV Alejo Pequeño v2.pdf'
             download>
             Descargar CV
+            <ArrowLineDown
+              className='ml-1'
+              size={20}
+              weight='bold'
+            />
           </motion.a>
           <motion.a
             className='w-[55px] h-[55px] rounded-[60px] bg-[#565d6a2d] flex items-center justify-center font-[600] my-4 text-base text-[#ec4e39]'
