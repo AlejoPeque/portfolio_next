@@ -58,21 +58,12 @@ export const proyectsData = [
     delay: 0.3
   },
   {
-    title: "Antiria",
+    title: "ToDo List",
     description:
-      "Participé en la creación de una página web con Node.js, Express y MySQL, incluyendo la creación de una API específicamente diseñada para el proyecto.",
-    tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "EJS"],
-    imageUrl: '/antiria.png',
-    href: 'https://github.com/alepeque9/antiria_node',
+      "Desarrollé una página web utilizando Vite y React con el propósito de crear una aplicación para gestionar y listar tareas pendientes.",
+    tags: ["React", "Vite", "Tailwind"],
+    imageUrl: '/todo.jpg',
+    href: 'https://github.com/alepeque9/toDo-FrontEnd-Mentor',
     delay: 0.4
-  },
-  {
-    title: "Antiria",
-    description:
-      "Participé en la creación de una página web con Node.js, Express y MySQL, incluyendo la creación de una API específicamente diseñada para el proyecto.",
-    tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "EJS"],
-    imageUrl: '/antiria.png',
-    href: 'https://github.com/alepeque9/antiria_node',
-    delay: 0.5
   },
 ]
