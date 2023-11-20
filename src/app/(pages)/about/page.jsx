@@ -137,7 +137,7 @@ export default function About() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
             className='text-[#565d6a] mb-4'>
-            Soy estudiante universitario en la institución{" "}
+            Estudiante universitario en la institución{" "}
             <span className='text-[#ec4e39] font-semibold'>
               Escuela Da Vinci
             </span>
