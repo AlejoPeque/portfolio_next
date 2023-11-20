@@ -34,7 +34,7 @@ export default function Home() {
           delay: 0.1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className={`${styles.homeImgMe} bg-[#1b1d22] w-[300px] h-[300px] border-4 border-[#ec4e39] relative z-10`}></motion.div>
+        className={`${styles.homeImgMe} bg-[#1b1d22] w-[300px] h-[300px] xl:w-[350px] xl:h-[350px] border-4 border-[#ec4e39] relative z-10`}></motion.div>
       <div className="relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

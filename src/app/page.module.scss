@@ -30,6 +30,16 @@
     color: #ec4e39;
 }
 
+.imgAbout{
+    display: none;
+}
+
+@media (min-width: 1096px) {
+    .imgAbout{
+        display: block;
+    }
+}
+
 @media (min-width: 1024px){
     .tecnologias ~ p{
         color: transparent;
@@ -37,7 +47,7 @@
 }
 
 .homeImgMe{
-    background-image: url('/3.jpg');
+    background-image: url('/6.jpg');
     background-size: cover;
     border-radius: 71% 29% 73% 27% / 36% 60% 40% 64%;
     animation: homeImgMe 8s ease-in-out infinite;

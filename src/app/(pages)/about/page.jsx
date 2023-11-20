@@ -52,11 +52,22 @@ export default function About() {
             shadow={false}
             className='relative'>
             <img
-              src='/1.jpg'
+              src='/3.jpg'
               className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
             />
             <p className='absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]'>
               Recital - 2023
+            </p>
+          </Atropos>
+          <Atropos
+            shadow={false}
+            className={`relative ${styles.imgAbout}`}>
+            <img
+              src='/4.jpg'
+              className={`w-[300px] rounded-lg imgAboutMe ${styles.aboutImgMe}`}
+            />
+            <p className='absolute text-[transparent] font-[600] transition-all bottom-3 left-4 hover:text-[#ec4e39]'>
+              Coding - 2022
             </p>
           </Atropos>
           <Atropos
@@ -130,9 +141,9 @@ export default function About() {
             <span className='text-[#ec4e39] font-semibold'>
               Escuela Da Vinci
             </span>
-            , persiguiendo un título de Diseñador Multimedial, ya que une mis
+            , persiguiendo un título de <span className='text-[#ec4e39] font-semibold'>Diseñador Multimedial</span>, ya que une mis
             dos pasiones, la programación y el diseño. Ademas estoy certificado
-            profesionalmente como Desarrollador Web FullStack en{" "}
+            profesionalmente como <span className='text-[#ec4e39] font-semibold'>Desarrollador Web FullStack</span> en{" "}
             <span className='text-[#ec4e39] font-semibold'>Digital House</span>.
             Quiero seguir especializándome en el diseño y en la programación, mi
             pasión por la tecnología y los lenguajes de programación impulsa mi
