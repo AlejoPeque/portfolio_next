@@ -31,7 +31,7 @@ export default function Home() {
       <Link href="/">
         <h1 className='mx-4 flex items-center'>
           <img
-            src='/Logo.png'
+            src='/Logov2.png'
             className='w-10'
             alt='Alejo Pequeño'></img>
         </h1>
