@@ -53,7 +53,15 @@ export default function Contact() {
           toast.success("Email sent successfully!");
         }}>
         <div className='max-w-4xl m-auto'>
-          <div className='mb-6'>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.3,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className='mb-6'>
             <label
               htmlFor='email'
               className='block text-sm mb-2 text-[#ec4e39] md:text-base font-medium'>
@@ -69,8 +77,16 @@ export default function Contact() {
               placeholder='example@email.com'
               required
             />
-          </div>
-          <div className='mb-6'>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.4,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className='mb-6'>
             <label
               htmlFor='message'
               className='block text-sm mb-2 text-[#ec4e39] md:text-base font-medium'>
@@ -85,8 +101,15 @@ export default function Contact() {
               maxLength={5000}
               className='block p-2.5 w-full text-sm bg-[transparent] outline-none border-2 border-[#565d6a] text-[#565d6a] rounded-lg md:text-base'
               placeholder='Escribe su consulta aqui...'></textarea>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}>
             <Toaster />
             {message && email ? (
               <button
@@ -99,13 +122,17 @@ export default function Contact() {
                     error: "Error",
                   })
                 }
-                className='py-1 px-4 font-[600] transition-all duration-200 hover:bg-[#ec4e39de] text-[#1b1d22] bg-[#ec4e39] rounded-full'>
+                className='flex items-center gap-1 py-2 px-4 font-[600] transition-all duration-200 text-[#1b1d22] bg-[#ec4e39] rounded-full'>
                 Enviar
+                <PaperPlaneTilt
+                  size={17}
+                  weight='bold'
+                />
               </button>
             ) : (
               <button
                 disabled
-                className='flex items-center gap-1 py-2 px-4 font-[600] transition-all duration-200 text-[#1b1d22] bg-[#ec4e3948] rounded-full line-through'>
+                className='flex items-center gap-1 py-2 px-4 font-[600] transition-all duration-200 text-[#1b1d22] bg-[#ec4e3948] rounded-full line-through relative translate-y-2'>
                 Enviar
                 <PaperPlaneTilt
                   size={17}
@@ -113,7 +140,7 @@ export default function Contact() {
                 />
               </button>
             )}
-          </div>
+          </motion.div>
         </div>
       </form>
     </main>
