@@ -26,7 +26,7 @@ export default function About() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
           className='text-[#ec4e39] font-[700] text-[38px]'>
-          Conóceme
+          Conoceme
         </motion.h2>
         <motion.h3
           initial={{ opacity: 0, y: 50 }}
@@ -106,7 +106,11 @@ export default function About() {
             className='text-[#565d6a] mb-4'>
             Soy{" "}
             <span className='text-[#ec4e39] font-semibold'>
-              Desarrollador Web Full Stack y Diseñador Multimedial
+              Desarrollador Web Full Stack
+            </span>{" "}
+            y{" "}
+            <span className='text-[#ec4e39] font-semibold'>
+              Diseñador Multimedial
             </span>
             .
           </motion.p>
@@ -122,8 +126,8 @@ export default function About() {
             Apasionado por programar y diseñar sitios web, con experiencia en
             crear{" "}
             <span className='text-[#ec4e39] font-semibold'>
-              soluciones web innovadoras.
-            </span>{" "}
+              soluciones web innovadoras
+            </span>.{" "}
             Destaco en el trabajo en equipo, siempre estoy aprendiendo y listo
             para enfrentar nuevos desafíos en mi área. Mi objetivo es contribuir
             al éxito de mi equipo y la organización en la que trabajo.
@@ -141,9 +145,16 @@ export default function About() {
             <span className='text-[#ec4e39] font-semibold'>
               Escuela Da Vinci
             </span>
-            , persiguiendo un título de <span className='text-[#ec4e39] font-semibold'>Diseñador Multimedial</span>, ya que une mis
-            dos pasiones, la programación y el diseño. Ademas estoy certificado
-            profesionalmente como <span className='text-[#ec4e39] font-semibold'>Desarrollador Web FullStack</span> en{" "}
+            , persiguiendo un título de{" "}
+            <span className='text-[#ec4e39] font-semibold'>
+              Diseñador Multimedial
+            </span>
+            , ya que une mis dos pasiones, la programación y el diseño. Ademas
+            estoy certificado profesionalmente como{" "}
+            <span className='text-[#ec4e39] font-semibold'>
+              Desarrollador Web FullStack
+            </span>{" "}
+            en{" "}
             <span className='text-[#ec4e39] font-semibold'>Digital House</span>.
             Quiero seguir especializándome en el diseño y en la programación, mi
             pasión por la tecnología y los lenguajes de programación impulsa mi
