@@ -49,13 +49,22 @@ export const experiencesData = [
 
 export const proyectsData = [
   {
+    title: "Blog | Alejo Pequeño",
+    description:
+      "Creé un blog con Next.js y React, donde comparto tutoriales sobre la construcción de componentes y exploración de diversas tecnologías web.",
+    tags: ["React", "Next.js", "Tailwind"],
+    imageUrl: '/blogAlejo.jpg',
+    href: 'https://alejo-pequeno-blog.vercel.app/',
+    delay: 0.3
+  },
+  {
     title: "Antiria",
     description:
       "Participé en la creación de una página web con Node.js, Express y MySQL, incluyendo la creación de una API específicamente diseñada para el proyecto.",
     tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "EJS"],
     imageUrl: '/antiria.png',
     href: 'https://github.com/alepeque9/antiria_node',
-    delay: 0.3
+    delay: 0.4
   },
   {
     title: "ToDo List",
@@ -64,6 +73,6 @@ export const proyectsData = [
     tags: ["React", "Vite", "Tailwind"],
     imageUrl: '/todo.jpg',
     href: 'https://github.com/alepeque9/toDo-FrontEnd-Mentor',
-    delay: 0.4
+    delay: 0.5
   },
 ]
