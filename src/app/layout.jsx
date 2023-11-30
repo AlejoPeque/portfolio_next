@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
     <html lang='es'>
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta name="google-site-verification" content="eXW1lKnBgYioDbIis8Yb32Gp38ZY97NNUqSlVkpvI1E" />
       </Head>
       <body className={`${inter.className} min-h-screen`}>
         <Header />
